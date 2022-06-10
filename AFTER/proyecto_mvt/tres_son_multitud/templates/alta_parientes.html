@@ -1,0 +1,24 @@
+{% block contenido %}
+    <h1>Alta de parientes<h1>
+    <form action="alta_parientes" method="POST">
+        {% csrf_token %}
+        <P>nombre:<P>
+        <input type= "text" name="nombre" required>
+        <P>apellidos:<P>
+        <input type= "text" name="apellidos" required>
+        <P>edad:<P>
+        <input type= "text" name="edad" required>
+        <P>cumpleaños:<P>
+        <input type= "date">
+        <P>locacion:<P>
+        <input type= "text" name="locacion" required>
+        
+
+
+
+        <input type= "submit" value="enviar">
+        
+        
+        </form>
+
+ {% endblock %}

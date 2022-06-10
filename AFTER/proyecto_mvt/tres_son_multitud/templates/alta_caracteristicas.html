@@ -1,0 +1,25 @@
+{% block contenido %}
+    <h1>Alta de caracteristicas<h1>
+    <form action="alta_caracteristicas" method="POST">
+        {% csrf_token %}
+        <P>comidas:<P>
+        <input type= "text" name="comidas" required>
+        <P>colores:<P>
+        <input type= "text" name="colores" required>
+        <P>signo:<P>
+        <input type= "text" name="signo" required>
+        <P>estatura:<P>
+        <input type= "text" name="estatura" required>
+        <P>peso:<P>
+        <input type= "text" name="peso" required>
+
+
+
+        <input type= "submit" value="enviar">
+        
+        
+        </form>
+        
+        
+
+{% endblock %}

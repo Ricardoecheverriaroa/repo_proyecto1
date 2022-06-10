@@ -55,7 +55,7 @@ ROOT_URLCONF = 'proyecto_mvt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ "C:/Users/ricar/OneDrive/Escritorio/nuevo_repo/AFTER/proyecto_mvt/tres_son_multitud/templates" ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,0 +1,26 @@
+{% block contenido %}
+    <h1>Alta de educacion<h1>
+    <form action="alta_educacion" method="POST">
+        {% csrf_token %}
+        <P>secundario:<P>
+        <input type= "text" name="secundario" required>
+        <P>tecnico:<P>
+        <input type= "text" name="tecnico" required>
+        <P>licenciatura:<P>
+        <input type= "text" name="licenciatura" required>
+        <P>postgrado:<P>
+        <input type= "text" name="postgrado" required>
+        <P>maestria:<P>
+        <input type= "text" name="maestria" required>
+        <P>doctorado:<P>
+        <input type= "text" name="doctorado" required>
+
+
+
+        <input type= "submit" value="enviar">
+        
+        
+        </form>
+
+{% endblock %}
+        
